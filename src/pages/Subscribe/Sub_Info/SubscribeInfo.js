@@ -1,7 +1,7 @@
 import React from 'react';
 
-const subscribeInfo = () => {
+const SubscribeInfo = () => {
   return <h1>SubscribeInfo</h1>;
 };
 
-export default subscribeInfo;
+export default SubscribeInfo;
