@@ -4,6 +4,7 @@ import Nav from './components/Nav/Nav';
 import Main from './pages/Main/Main';
 import Signup from './pages/Signup/Signup';
 import Signin from './pages/Signin/Signin';
+import Loading from './pages/Signin/Loading';
 import Search from './pages/Search/Search';
 import SubscribeInfo from './pages/Subscribe/Sub_Info/SubscribeInfo';
 import Subscribe from './pages/Subscribe/Subscribe';
@@ -21,6 +22,7 @@ const Router = () => {
         <Route path="/" element={<Main />} />
         <Route path="/signup" element={<Signup />} />
         <Route path="/signin" element={<Signin />} />
+        <Route path="/oauth/callback/kakao" element={<Loading />} />
         <Route path="/search" element={<Search />} />
         <Route path="/subscribeinfo" element={<SubscribeInfo />} />
         <Route path="/subscribe" element={<Subscribe />} />

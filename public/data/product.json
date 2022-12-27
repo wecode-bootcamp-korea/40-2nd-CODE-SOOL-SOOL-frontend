@@ -1,0 +1,112 @@
+[
+  {
+    "name": "천국의 맛",
+    "capacity": "300ml",
+    "imageUrl": "https://cdn.discordapp.com/attachments/477456560205987868/1057475840314716232/PhotoRoom-20221228_104129.png",
+    "description": "#프리미엄 수제약주",
+    "ExpirationDate": "2024-02-03",
+    "price": "25000",
+    "alcohol": "17.5",
+    "producttypeId": "1",
+    "sparklingvolumeId": "1"
+  },
+  {
+    "name": "청주토피아",
+    "capacity": "375ml",
+    "imageUrl": "https://cdn.discordapp.com/attachments/477456560205987868/1057475822648315964/PhotoRoom-20221228_103801.png",
+    "description": "#5분이면 뚝딱",
+    "ExpirationDate": "2024-02-03",
+    "price": "27000",
+    "alcohol": "13.5",
+    "producttypeId": "2",
+    "sparklingvolumeId": "2"
+  },
+  {
+    "name": "머루 와인",
+    "capacity": "400ml",
+    "imageUrl": "https://cdn.discordapp.com/attachments/477456560205987868/1057475842260873286/PhotoRoom-20221228_104239.png",
+    "description": "#병째로 들이켜고 싶은",
+    "ExpirationDate": "2024-02-03",
+    "price": "28000",
+    "alcohol": "12.5",
+    "producttypeId": "3",
+    "sparklingvolumeId": "1"
+  },
+  {
+    "name": "왕십리 산타",
+    "capacity": "400ml",
+    "imageUrl": "https://cdn.discordapp.com/attachments/477456560205987868/1057475823269056573/PhotoRoom-20221228_103950.png",
+    "description": "#깔끔하고 가볍",
+    "ExpirationDate": "2024-02-04",
+    "price": "29000",
+    "alcohol": "14.5",
+    "producttypeId": "1",
+    "sparklingvolumeId": "2"
+  },
+  {
+    "name": "위코드의 밤",
+    "capacity": "350ml",
+    "imageUrl": "https://cdn.discordapp.com/attachments/477456560205987868/1057475821733957672/PhotoRoom-20221228_103500.png",
+    "description": "#새콤달콤",
+    "ExpirationDate": "2024-02-05",
+    "price": "29500",
+    "alcohol": "13.7",
+    "producttypeId": "2",
+    "sparklingvolumeId": "1"
+  },
+  {
+    "name": "겨울 마법상자",
+    "capacity": "230ml",
+    "imageUrl": "https://cdn.discordapp.com/attachments/477456560205987868/1057475841967280128/PhotoRoom-20221228_104200.png",
+    "description": "#청량감 끝판왕",
+    "ExpirationDate": "2024-02-06",
+    "price": "31000",
+    "alcohol": "31.2",
+    "producttypeId": "3",
+    "sparklingvolumeId": "2"
+  },
+  {
+    "name": "숙성 레몬체리 ",
+    "capacity": "230ml",
+    "imageUrl": "https://cdn.discordapp.com/attachments/477456560205987868/1057475823587840050/PhotoRoom-20221228_104024.png",
+    "description": "#맛 밸런스 최강",
+    "ExpirationDate": "2024-02-07",
+    "price": "32000",
+    "alcohol": "33.2",
+    "producttypeId": "1",
+    "sparklingvolumeId": "1"
+  },
+  {
+    "name": "더 오폴리스 로제 ",
+    "capacity": "230ml",
+    "imageUrl": "https://cdn.discordapp.com/attachments/477456560205987868/1057475822052712489/PhotoRoom-20221228_103615.png",
+    "description": "#부드러운 달콤함",
+    "ExpirationDate": "2024-02-08",
+    "price": "33000",
+    "alcohol": "34",
+    "producttypeId": "2",
+    "sparklingvolumeId": "2"
+  },
+  {
+    "name": "파니파니",
+    "capacity": "230ml",
+    "imageUrl": "https://cdn.discordapp.com/attachments/477456560205987868/1057475822962876506/PhotoRoom-20221228_103842.png",
+    "description": "#여러방송 매체 나온술",
+    "ExpirationDate": "2024-02-09",
+    "price": "34000",
+    "alcohol": "35",
+    "producttypeId": "3",
+    "sparklingvolumeId": "1"
+  },
+  {
+    "name": "도리도리",
+    "capacity": "250ml",
+    "imageUrl": "https://cdn.discordapp.com/attachments/477456560205987868/1057475822354698270/PhotoRoom-20221228_103713.png",
+    "description": "#깔끔한 목넘김",
+    "ExpirationDate": "2024-02-10",
+    "price": "45000",
+    "alcohol": "36",
+    "producttypeId": "1",
+    "sparklingvolumeId": "2"
+  }
+]
