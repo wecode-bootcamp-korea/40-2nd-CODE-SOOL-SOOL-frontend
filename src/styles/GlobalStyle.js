@@ -9,6 +9,9 @@ const GlobalStyle = createGlobalStyle`
   a {
     color: inherit;
   }
+  .slick-slide{
+    display: inline-block;
+  }
 `;
 
 export default GlobalStyle;

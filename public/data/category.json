@@ -1,0 +1,42 @@
+[
+  {
+    "name": "탁주",
+    "imageUrl": "https://www.sooldamhwa.com/images/modules/damhwaMarket/icon_takju.png",
+    "categoryId": "1"
+  },
+  {
+    "name": "약 ・ 청주",
+    "imageUrl": "https://www.sooldamhwa.com/images/modules/damhwaMarket/icon_cheongju.png",
+    "categoryId": "2"
+  },
+  {
+    "name": "과실주",
+    "imageUrl": "https://www.sooldamhwa.com/images/modules/damhwaMarket/icon_gwashilju.png",
+    "categoryId": "3"
+  },
+  {
+    "name": "증류주",
+    "imageUrl": "https://www.sooldamhwa.com/images/modules/damhwaMarket/icon_jeungryuju.png",
+    "categoryId": "4"
+  },
+  {
+    "name": "선물세트",
+    "imageUrl": "https://www.sooldamhwa.com/images/modules/damhwaMarket/icon_gift.png",
+    "categoryId": "5"
+  },
+  {
+    "name": "ONLY술담아",
+    "imageUrl": "https://www.sooldamhwa.com/images/modules/damhwaMarket/icon_only_sooldamhwa.png",
+    "categoryId": "6"
+  },
+  {
+    "name": "이벤트",
+    "imageUrl": "https://www.sooldamhwa.com/images/modules/damhwaMarket/icon_event.png",
+    "categoryId": "7"
+  },
+  {
+    "name": "기업구매",
+    "imageUrl": "https://www.sooldamhwa.com/images/modules/damhwaMarket/icon_bizgift.png",
+    "categoryId": "8"
+  }
+]
