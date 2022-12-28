@@ -1,0 +1,20 @@
+[
+  {
+    "id": 1,
+    "title": "탁주",
+    "subTitle": "맛있는 탁주는 다 있어요",
+    "icon": "https://img.icons8.com/external-vitaliy-gorbachev-lineal-color-vitaly-gorbachev/60/null/external-bottle-bad-habits-vitaliy-gorbachev-lineal-color-vitaly-gorbachev.png"
+  },
+  {
+    "id": 2,
+    "title": "청주",
+    "subTitle": "맑고 깨끗한 술을 즐겨요",
+    "icon": "https://img.icons8.com/external-vitaliy-gorbachev-lineal-color-vitaly-gorbachev/60/null/external-bottle-oktoberfest-vitaliy-gorbachev-lineal-color-vitaly-gorbachev.png"
+  },
+  {
+    "id": 3,
+    "title": "과실주",
+    "subTitle": "칵테일로도 즐겨보세요",
+    "icon": "https://img.icons8.com/external-vitaliy-gorbachev-lineal-color-vitaly-gorbachev/60/null/external-bottle-hygiene-vitaliy-gorbachev-lineal-color-vitaly-gorbachev.png"
+  }
+]
