@@ -34,7 +34,7 @@ function Loading() {
       .then(res => res.json())
       .then(data => {
         const TOKEN = data.access_token;
-        fetch('http://10.58.52.188:3000/auth/signin', {
+        fetch('http://10.58.52.213:3000/auth/signin', {
           method: 'GET',
           headers: {
             'Content-Type': 'application/json;charset=utf-8',
