@@ -1,30 +1,64 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
+import { Link } from 'react-router-dom';
 import styled from 'styled-components';
+import SearchItem from './component/SearchItem/searchItem';
 
 const Search = () => {
+  const [productList, setProductList] = useState([]);
+  const [inputWord, setInputWord] = useState(''); //inputvalue 저장
+
+  const inputLength = inputWord.length;
+
+  const inputWordSearch = e => {
+    setInputWord(e.target.value);
+  }; //inputvalue 저장
+
+  const filteredItem = productList.filter(alcohol =>
+    alcohol.name.toLowerCase().includes(inputWord.toLocaleLowerCase())
+  );
+
+  useEffect(() => {
+    fetch(`http://10.58.52.56.:3000/products/name?productName=${inputWord}`, {
+      headers: {
+        'Content-type': 'application/json',
+      },
+      method: 'GET',
+    })
+      .then(res => res.json())
+      .then(data => setProductList(data));
+  }, []);
+
   return (
     <SearchMain>
       <SearchBoxStyle>
-        <SearchInput type="search" placeholder="🔍 무엇을 찾고 계신가요?" />
-        <SearchInputButton>취소</SearchInputButton>
+        <SearchInput
+          onChange={inputWordSearch}
+          type="search"
+          placeholder="🔍 무엇을 찾고 계신가요?"
+        />
+        <SearchInputButton>검색</SearchInputButton>
+        <SearchInputRemoveButton>취소</SearchInputRemoveButton>
       </SearchBoxStyle>
-      <SearchRemove>
-        <SearchRemoveWapper>
-          <SearchRemoveBox>
-            <SearchRemoveBoxRecent>최근 검색</SearchRemoveBoxRecent>
-            <SearchRemoveBoxButton>모두 지우기</SearchRemoveBoxButton>
-          </SearchRemoveBox>
-          <SearchRemoveBoxNoData>
-            최근 검색한 내역이 없습니다.
-          </SearchRemoveBoxNoData>
-        </SearchRemoveWapper>
-      </SearchRemove>
+      <ProductItemListUl>
+        {inputLength === 0 ? (
+          <SearchItem />
+        ) : (
+          filteredItem.map(product => (
+            <Link key={product.id} to={`/productinfo/${product.id}`}>
+              <ProductItemList key={product.productName}>
+                {product.name}
+              </ProductItemList>
+            </Link>
+          ))
+        )}
+      </ProductItemListUl>
     </SearchMain>
   );
 };
 
 const SearchMain = styled.div`
   height: 100%;
+  margin-bottom: 150px;
 `;
 
 const SearchBoxStyle = styled.div`
@@ -56,42 +90,25 @@ const SearchInputButton = styled.button`
   cursor: pointer;
 `;
 
-const SearchRemove = styled.div`
+const SearchInputRemoveButton = styled.button`
+  border: none;
+  color: #0097f3;
   background-color: white;
-  width: 100%;
-  padding: 30px 0px 100px;
-`;
-
-const SearchRemoveWapper = styled.div`
-  display: flex;
-  flex-direction: column;
-  width: 100%;
-  height: 100%;
-  margin: 0px auto;
-  padding: 0px 69px;
-  max-width: 1144px;
-`;
-
-const SearchRemoveBox = styled.div`
-  display: flex;
-  justify-content: space-between;
-  margin-bottom: 20px;
-`;
-
-const SearchRemoveBoxRecent = styled.div`
-  font-size: 15px;
-  font-weight: bold;
-`;
-
-const SearchRemoveBoxButton = styled.div`
-  font-size: 13px;
-  font-weight: 500;
-  color: #707070;
+  margin-left: 14px;
+  white-space: nowrap;
   cursor: pointer;
 `;
 
-const SearchRemoveBoxNoData = styled.div`
-  color: #707070;
-  font-size: 13px;
+const ProductItemListUl = styled.ul`
+  max-width: 1144px;
+  padding: 0px 69px 0px 69px;
+  margin: 20px auto 0px auto;
 `;
+
+const ProductItemList = styled.li`
+  margin-top: 5px;
+  color: #707070;
+  font-size: 15px;
+`;
+
 export default Search;
