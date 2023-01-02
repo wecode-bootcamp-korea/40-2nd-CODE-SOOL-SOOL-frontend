@@ -9,7 +9,7 @@ import Search from './pages/Search/Search';
 import SubscribeInfo from './pages/Subscribe/Sub_Info/SubscribeInfo';
 import Subscribe from './pages/Subscribe/Subscribe';
 import ProductList from './pages/ProductList/ProductList';
-import ProductDetail from './pages/ProductList/Detail/ProductInfo';
+import ProductDetail from './pages/ProductList/Detail/ProductDetail';
 import Cart from './pages/Cart/Cart';
 import Receipt from './pages/Receipt/Receipt';
 import Footer from './components/Footer/Footer';
