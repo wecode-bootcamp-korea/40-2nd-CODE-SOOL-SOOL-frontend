@@ -16,6 +16,10 @@ function Header() {
   );
 }
 
+const HeaderPage = styled.div`
+  margin: 50%;
+`;
+
 const HeaderWrap = styled.div`
   position: relative;
   display: flex;
