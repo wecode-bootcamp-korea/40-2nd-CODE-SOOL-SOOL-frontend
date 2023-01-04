@@ -14,7 +14,7 @@ const Nav = () => {
             />
           </Link>
           <NavMainMenuList>
-            <StyledLink to="/subscribe">
+            <StyledLink to="/subscribeinfo">
               <NavMainMenuListItem>구독서비스</NavMainMenuListItem>
             </StyledLink>
             <StyledLink to="/productlist">
