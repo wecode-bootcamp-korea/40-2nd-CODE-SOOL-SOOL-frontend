@@ -44,7 +44,7 @@ const Search = () => {
           <SearchItem />
         ) : (
           filteredItem.map(product => (
-            <Link key={product.id} to={`/productinfo/${product.id}`}>
+            <Link key={product.id} to={`/productdetail/${product.id}`}>
               <ProductItemList key={product.productName}>
                 {product.name}
               </ProductItemList>
