@@ -19,7 +19,7 @@ const ProductCartSide = props => {
         quantity: count,
         price: price,
       }),
-    }).then(() => {
+    }).then(response => {
       if (response.ok === true) {
         if (
           window.confirm('장바구니에 담았습니다. 장바구니로 이동하시겠습니까?')
